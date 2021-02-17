@@ -1,0 +1,2446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210217 22:58:03.300" rpa="false">
+<suite id="s1" name="Authentication Shipper" source="D:\other\shipper\Authentication_Shipper.robot">
+<test id="s1-t1" name="Registration Shipper Bos">
+<kw name="Given User open link Shipper Bos" library="Resource_Registration">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url login}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:03.515" level="INFO">Opening browser 'chrome' to base url 'https://shipper.id/bos/auth/login'.</msg>
+<status status="PASS" starttime="20210217 22:58:03.515" endtime="20210217 22:58:24.067"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210217 22:58:24.067" endtime="20210217 22:58:24.191"></status>
+</kw>
+<status status="PASS" starttime="20210217 22:58:03.514" endtime="20210217 22:58:24.192"></status>
+</kw>
+<kw name="And BOS Portal page should be open" library="Resource_Registration">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>BOS PORTAL | Shipper.id</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.201" level="INFO">Page title is 'BOS PORTAL | Shipper.id'.</msg>
+<status status="PASS" starttime="20210217 22:58:24.195" endtime="20210217 22:58:24.201"></status>
+</kw>
+<status status="PASS" starttime="20210217 22:58:24.194" endtime="20210217 22:58:24.202"></status>
+</kw>
+<kw name="And Checking elements on page Registration" library="Resource_Registration">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${menu daftar}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.203" level="INFO">Clicking element 'id=btn-tabdaftar'.</msg>
+<status status="PASS" starttime="20210217 22:58:24.203" endtime="20210217 22:58:24.295"></status>
+</kw>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0, 300)</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.296" level="INFO">Executing JavaScript:
+window.scrollTo(0, 300)
+Without any arguments.</msg>
+<status status="PASS" starttime="20210217 22:58:24.296" endtime="20210217 22:58:24.303"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${first name}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.342" level="INFO">Element 'id=firstname' is displayed.</msg>
+<status status="PASS" starttime="20210217 22:58:24.303" endtime="20210217 22:58:24.342"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${last name}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.372" level="INFO">Element 'id=lastname' is displayed.</msg>
+<status status="PASS" starttime="20210217 22:58:24.342" endtime="20210217 22:58:24.372"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.398" level="INFO">Element 'id=email' is displayed.</msg>
+<status status="PASS" starttime="20210217 22:58:24.372" endtime="20210217 22:58:24.398"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${nomor handphone}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.422" level="INFO">Element 'id=handphone' is displayed.</msg>
+<status status="PASS" starttime="20210217 22:58:24.398" endtime="20210217 22:58:24.422"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.472" level="INFO">Element 'id=passreg' is displayed.</msg>
+<status status="PASS" starttime="20210217 22:58:24.422" endtime="20210217 22:58:24.472"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${confirm password}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.496" level="INFO">Element 'id=conpassreg' is displayed.</msg>
+<status status="PASS" starttime="20210217 22:58:24.472" endtime="20210217 22:58:24.496"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${address}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.519" level="INFO">Element 'id=address' is displayed.</msg>
+<status status="PASS" starttime="20210217 22:58:24.496" endtime="20210217 22:58:24.519"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${city}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.541" level="INFO">Element 'id=city' is displayed.</msg>
+<status status="PASS" starttime="20210217 22:58:24.520" endtime="20210217 22:58:24.541"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${district}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.564" level="INFO">Element 'id=suburb' is displayed.</msg>
+<status status="PASS" starttime="20210217 22:58:24.541" endtime="20210217 22:58:24.565"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${village}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.588" level="INFO">Element 'id=area' is displayed.</msg>
+<status status="PASS" starttime="20210217 22:58:24.565" endtime="20210217 22:58:24.588"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${postal code}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.613" level="INFO">Element 'id=zipcode' is displayed.</msg>
+<status status="PASS" starttime="20210217 22:58:24.588" endtime="20210217 22:58:24.613"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${button daftar}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.638" level="INFO">Element 'id=btn-daftar' is displayed.</msg>
+<status status="PASS" starttime="20210217 22:58:24.613" endtime="20210217 22:58:24.638"></status>
+</kw>
+<status status="PASS" starttime="20210217 22:58:24.202" endtime="20210217 22:58:24.638"></status>
+</kw>
+<kw name="And Registration using empty first name" library="Resource_Registration">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last name}</arg>
+<arg>Test</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.640" level="INFO">Typing text 'Test' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20210217 22:58:24.640" endtime="20210217 22:58:24.736"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email}</arg>
+<arg>${email data}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.736" level="INFO">Typing text 'test1008@test.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210217 22:58:24.736" endtime="20210217 22:58:24.837"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${nomor handphone}</arg>
+<arg>${nomor handphone data}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.838" level="INFO">Typing text '08121002318' into text field 'id=handphone'.</msg>
+<status status="PASS" starttime="20210217 22:58:24.837" endtime="20210217 22:58:24.938"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:24.938" level="INFO">Typing text 'Test12345' into text field 'id=passreg'.</msg>
+<status status="PASS" starttime="20210217 22:58:24.938" endtime="20210217 22:58:25.043"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirm password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:25.044" level="INFO">Typing text 'Test12345' into text field 'id=conpassreg'.</msg>
+<status status="PASS" starttime="20210217 22:58:25.044" endtime="20210217 22:58:25.165"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${address}</arg>
+<arg>Kebon Kacang 87</arg>
+</arguments>
+<msg timestamp="20210217 22:58:25.166" level="INFO">Typing text 'Kebon Kacang 87' into text field 'id=address'.</msg>
+<status status="PASS" starttime="20210217 22:58:25.165" endtime="20210217 22:58:25.262"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:27.264" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:58:25.262" endtime="20210217 22:58:27.264"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${city}</arg>
+<arg>Jakarta Barat, DKI Jakarta</arg>
+</arguments>
+<msg timestamp="20210217 22:58:27.265" level="INFO">Selecting options from selection list 'id=city' by label Jakarta Barat, DKI Jakarta.</msg>
+<status status="PASS" starttime="20210217 22:58:27.265" endtime="20210217 22:58:27.427"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:29.432" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:58:27.427" endtime="20210217 22:58:29.432"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${district}</arg>
+<arg>Cengkareng</arg>
+</arguments>
+<msg timestamp="20210217 22:58:29.432" level="INFO">Selecting options from selection list 'id=suburb' by label Cengkareng.</msg>
+<status status="PASS" starttime="20210217 22:58:29.432" endtime="20210217 22:58:29.607"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:31.617" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:58:29.607" endtime="20210217 22:58:31.617"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${village}</arg>
+<arg>Cengkareng Barat</arg>
+</arguments>
+<msg timestamp="20210217 22:58:31.619" level="INFO">Selecting options from selection list 'id=area' by label Cengkareng Barat.</msg>
+<status status="PASS" starttime="20210217 22:58:31.618" endtime="20210217 22:58:31.811"></status>
+</kw>
+<kw name="Textfield Value Should Be" library="Selenium2Library">
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<arguments>
+<arg>${postal code}</arg>
+<arg>11730</arg>
+</arguments>
+<msg timestamp="20210217 22:58:31.851" level="INFO">Content of text field 'id=zipcode' is '11730'.</msg>
+<status status="PASS" starttime="20210217 22:58:31.812" endtime="20210217 22:58:31.851"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button daftar}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:31.851" level="INFO">Clicking button 'id=btn-daftar'.</msg>
+<status status="PASS" starttime="20210217 22:58:31.851" endtime="20210217 22:58:32.021"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:34.024" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:58:32.021" endtime="20210217 22:58:34.025"></status>
+</kw>
+<status status="PASS" starttime="20210217 22:58:24.640" endtime="20210217 22:58:34.026"></status>
+</kw>
+<kw name="And Registration using empty last name" library="Resource_Registration">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first name}</arg>
+<arg>Tubang</arg>
+</arguments>
+<msg timestamp="20210217 22:58:34.030" level="INFO">Typing text 'Tubang' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20210217 22:58:34.030" endtime="20210217 22:58:34.275"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${last name}</arg>
+</arguments>
+<status status="PASS" starttime="20210217 22:58:34.276" endtime="20210217 22:58:34.329"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email}</arg>
+<arg>${email data}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:34.330" level="INFO">Typing text 'test1008@test.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210217 22:58:34.329" endtime="20210217 22:58:34.409"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${nomor handphone}</arg>
+<arg>${nomor handphone data}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:34.410" level="INFO">Typing text '08121002318' into text field 'id=handphone'.</msg>
+<status status="PASS" starttime="20210217 22:58:34.409" endtime="20210217 22:58:34.492"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:34.493" level="INFO">Typing text 'Test12345' into text field 'id=passreg'.</msg>
+<status status="PASS" starttime="20210217 22:58:34.493" endtime="20210217 22:58:34.611"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirm password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:34.612" level="INFO">Typing text 'Test12345' into text field 'id=conpassreg'.</msg>
+<status status="PASS" starttime="20210217 22:58:34.611" endtime="20210217 22:58:34.684"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${address}</arg>
+<arg>Kebon Kacang 87</arg>
+</arguments>
+<msg timestamp="20210217 22:58:34.685" level="INFO">Typing text 'Kebon Kacang 87' into text field 'id=address'.</msg>
+<status status="PASS" starttime="20210217 22:58:34.684" endtime="20210217 22:58:34.760"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:36.769" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:58:34.761" endtime="20210217 22:58:36.769"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${city}</arg>
+<arg>Jakarta Barat, DKI Jakarta</arg>
+</arguments>
+<msg timestamp="20210217 22:58:36.769" level="INFO">Selecting options from selection list 'id=city' by label Jakarta Barat, DKI Jakarta.</msg>
+<status status="PASS" starttime="20210217 22:58:36.769" endtime="20210217 22:58:36.888"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:38.895" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:58:36.888" endtime="20210217 22:58:38.895"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${district}</arg>
+<arg>Cengkareng</arg>
+</arguments>
+<msg timestamp="20210217 22:58:38.895" level="INFO">Selecting options from selection list 'id=suburb' by label Cengkareng.</msg>
+<status status="PASS" starttime="20210217 22:58:38.895" endtime="20210217 22:58:38.951"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:40.966" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:58:38.951" endtime="20210217 22:58:40.966"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${village}</arg>
+<arg>Cengkareng Barat</arg>
+</arguments>
+<msg timestamp="20210217 22:58:40.966" level="INFO">Selecting options from selection list 'id=area' by label Cengkareng Barat.</msg>
+<status status="PASS" starttime="20210217 22:58:40.966" endtime="20210217 22:58:41.083"></status>
+</kw>
+<kw name="Textfield Value Should Be" library="Selenium2Library">
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<arguments>
+<arg>${postal code}</arg>
+<arg>11730</arg>
+</arguments>
+<msg timestamp="20210217 22:58:41.127" level="INFO">Content of text field 'id=zipcode' is '11730'.</msg>
+<status status="PASS" starttime="20210217 22:58:41.083" endtime="20210217 22:58:41.127"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button daftar}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:41.128" level="INFO">Clicking button 'id=btn-daftar'.</msg>
+<status status="PASS" starttime="20210217 22:58:41.127" endtime="20210217 22:58:41.256"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:43.267" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:58:41.257" endtime="20210217 22:58:43.267"></status>
+</kw>
+<status status="PASS" starttime="20210217 22:58:34.029" endtime="20210217 22:58:43.267"></status>
+</kw>
+<kw name="And Registration using empty email" library="Resource_Registration">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first name}</arg>
+<arg>Tubang</arg>
+</arguments>
+<msg timestamp="20210217 22:58:43.271" level="INFO">Typing text 'Tubang' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20210217 22:58:43.271" endtime="20210217 22:58:43.387"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last name}</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20210217 22:58:43.387" level="INFO">Typing text 'test' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20210217 22:58:43.387" endtime="20210217 22:58:43.493"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${email}</arg>
+</arguments>
+<status status="PASS" starttime="20210217 22:58:43.493" endtime="20210217 22:58:43.548"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${nomor handphone}</arg>
+<arg>${nomor handphone data}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:43.548" level="INFO">Typing text '08121002318' into text field 'id=handphone'.</msg>
+<status status="PASS" starttime="20210217 22:58:43.548" endtime="20210217 22:58:43.648"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:43.648" level="INFO">Typing text 'Test12345' into text field 'id=passreg'.</msg>
+<status status="PASS" starttime="20210217 22:58:43.648" endtime="20210217 22:58:43.757"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirm password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:43.757" level="INFO">Typing text 'Test12345' into text field 'id=conpassreg'.</msg>
+<status status="PASS" starttime="20210217 22:58:43.757" endtime="20210217 22:58:43.874"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${address}</arg>
+<arg>Kebon Kacang 87</arg>
+</arguments>
+<msg timestamp="20210217 22:58:43.875" level="INFO">Typing text 'Kebon Kacang 87' into text field 'id=address'.</msg>
+<status status="PASS" starttime="20210217 22:58:43.874" endtime="20210217 22:58:43.973"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:45.980" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:58:43.973" endtime="20210217 22:58:45.980"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${city}</arg>
+<arg>Jakarta Barat, DKI Jakarta</arg>
+</arguments>
+<msg timestamp="20210217 22:58:45.983" level="INFO">Selecting options from selection list 'id=city' by label Jakarta Barat, DKI Jakarta.</msg>
+<status status="PASS" starttime="20210217 22:58:45.982" endtime="20210217 22:58:46.051"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:48.060" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:58:46.052" endtime="20210217 22:58:48.060"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${district}</arg>
+<arg>Cengkareng</arg>
+</arguments>
+<msg timestamp="20210217 22:58:48.060" level="INFO">Selecting options from selection list 'id=suburb' by label Cengkareng.</msg>
+<status status="PASS" starttime="20210217 22:58:48.060" endtime="20210217 22:58:48.139"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:50.141" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:58:48.139" endtime="20210217 22:58:50.141"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${village}</arg>
+<arg>Cengkareng Barat</arg>
+</arguments>
+<msg timestamp="20210217 22:58:50.141" level="INFO">Selecting options from selection list 'id=area' by label Cengkareng Barat.</msg>
+<status status="PASS" starttime="20210217 22:58:50.141" endtime="20210217 22:58:50.173"></status>
+</kw>
+<kw name="Textfield Value Should Be" library="Selenium2Library">
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<arguments>
+<arg>${postal code}</arg>
+<arg>11730</arg>
+</arguments>
+<msg timestamp="20210217 22:58:50.196" level="INFO">Content of text field 'id=zipcode' is '11730'.</msg>
+<status status="PASS" starttime="20210217 22:58:50.173" endtime="20210217 22:58:50.196"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button daftar}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:50.196" level="INFO">Clicking button 'id=btn-daftar'.</msg>
+<status status="PASS" starttime="20210217 22:58:50.196" endtime="20210217 22:58:50.284"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:52.298" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:58:50.285" endtime="20210217 22:58:52.298"></status>
+</kw>
+<status status="PASS" starttime="20210217 22:58:43.269" endtime="20210217 22:58:52.299"></status>
+</kw>
+<kw name="And Registration using empty phone number" library="Resource_Registration">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first name}</arg>
+<arg>Tubang</arg>
+</arguments>
+<msg timestamp="20210217 22:58:52.305" level="INFO">Typing text 'Tubang' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20210217 22:58:52.304" endtime="20210217 22:58:52.550"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last name}</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20210217 22:58:52.552" level="INFO">Typing text 'test' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20210217 22:58:52.551" endtime="20210217 22:58:52.757"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email}</arg>
+<arg>${email data}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:52.757" level="INFO">Typing text 'test1008@test.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210217 22:58:52.757" endtime="20210217 22:58:52.909"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${nomor handphone}</arg>
+</arguments>
+<status status="PASS" starttime="20210217 22:58:52.909" endtime="20210217 22:58:52.962"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:52.963" level="INFO">Typing text 'Test12345' into text field 'id=passreg'.</msg>
+<status status="PASS" starttime="20210217 22:58:52.963" endtime="20210217 22:58:53.033"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirm password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:53.033" level="INFO">Typing text 'Test12345' into text field 'id=conpassreg'.</msg>
+<status status="PASS" starttime="20210217 22:58:53.033" endtime="20210217 22:58:53.130"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${address}</arg>
+<arg>Kebon Kacang 87</arg>
+</arguments>
+<msg timestamp="20210217 22:58:53.130" level="INFO">Typing text 'Kebon Kacang 87' into text field 'id=address'.</msg>
+<status status="PASS" starttime="20210217 22:58:53.130" endtime="20210217 22:58:53.233"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:55.242" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:58:53.233" endtime="20210217 22:58:55.242"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${city}</arg>
+<arg>Jakarta Barat, DKI Jakarta</arg>
+</arguments>
+<msg timestamp="20210217 22:58:55.243" level="INFO">Selecting options from selection list 'id=city' by label Jakarta Barat, DKI Jakarta.</msg>
+<status status="PASS" starttime="20210217 22:58:55.243" endtime="20210217 22:58:55.328"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:57.332" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:58:55.328" endtime="20210217 22:58:57.332"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${district}</arg>
+<arg>Cengkareng</arg>
+</arguments>
+<msg timestamp="20210217 22:58:57.334" level="INFO">Selecting options from selection list 'id=suburb' by label Cengkareng.</msg>
+<status status="PASS" starttime="20210217 22:58:57.333" endtime="20210217 22:58:57.414"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:59.416" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:58:57.415" endtime="20210217 22:58:59.416"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${village}</arg>
+<arg>Cengkareng Barat</arg>
+</arguments>
+<msg timestamp="20210217 22:58:59.416" level="INFO">Selecting options from selection list 'id=area' by label Cengkareng Barat.</msg>
+<status status="PASS" starttime="20210217 22:58:59.416" endtime="20210217 22:58:59.504"></status>
+</kw>
+<kw name="Textfield Value Should Be" library="Selenium2Library">
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<arguments>
+<arg>${postal code}</arg>
+<arg>11730</arg>
+</arguments>
+<msg timestamp="20210217 22:58:59.552" level="INFO">Content of text field 'id=zipcode' is '11730'.</msg>
+<status status="PASS" starttime="20210217 22:58:59.504" endtime="20210217 22:58:59.552"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button daftar}</arg>
+</arguments>
+<msg timestamp="20210217 22:58:59.552" level="INFO">Clicking button 'id=btn-daftar'.</msg>
+<status status="PASS" starttime="20210217 22:58:59.552" endtime="20210217 22:58:59.719"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:01.730" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:58:59.719" endtime="20210217 22:59:01.730"></status>
+</kw>
+<status status="PASS" starttime="20210217 22:58:52.302" endtime="20210217 22:59:01.731"></status>
+</kw>
+<kw name="And Registration using empty password" library="Resource_Registration">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first name}</arg>
+<arg>Tubang</arg>
+</arguments>
+<msg timestamp="20210217 22:59:01.736" level="INFO">Typing text 'Tubang' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20210217 22:59:01.735" endtime="20210217 22:59:01.873"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last name}</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20210217 22:59:01.873" level="INFO">Typing text 'test' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20210217 22:59:01.873" endtime="20210217 22:59:01.951"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email}</arg>
+<arg>${email data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:01.951" level="INFO">Typing text 'test1008@test.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210217 22:59:01.951" endtime="20210217 22:59:02.075"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${nomor handphone}</arg>
+<arg>${nomor handphone data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:02.076" level="INFO">Typing text '08121002318' into text field 'id=handphone'.</msg>
+<status status="PASS" starttime="20210217 22:59:02.076" endtime="20210217 22:59:02.176"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<status status="PASS" starttime="20210217 22:59:02.176" endtime="20210217 22:59:02.230"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirm password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:02.230" level="INFO">Typing text 'Test12345' into text field 'id=conpassreg'.</msg>
+<status status="PASS" starttime="20210217 22:59:02.230" endtime="20210217 22:59:02.345"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${address}</arg>
+<arg>Kebon Kacang 87</arg>
+</arguments>
+<msg timestamp="20210217 22:59:02.345" level="INFO">Typing text 'Kebon Kacang 87' into text field 'id=address'.</msg>
+<status status="PASS" starttime="20210217 22:59:02.345" endtime="20210217 22:59:02.411"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:04.415" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:02.411" endtime="20210217 22:59:04.415"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${city}</arg>
+<arg>Jakarta Barat, DKI Jakarta</arg>
+</arguments>
+<msg timestamp="20210217 22:59:04.415" level="INFO">Selecting options from selection list 'id=city' by label Jakarta Barat, DKI Jakarta.</msg>
+<status status="PASS" starttime="20210217 22:59:04.415" endtime="20210217 22:59:04.503"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:06.505" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:04.503" endtime="20210217 22:59:06.505"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${district}</arg>
+<arg>Cengkareng</arg>
+</arguments>
+<msg timestamp="20210217 22:59:06.505" level="INFO">Selecting options from selection list 'id=suburb' by label Cengkareng.</msg>
+<status status="PASS" starttime="20210217 22:59:06.505" endtime="20210217 22:59:06.594"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:08.602" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:06.594" endtime="20210217 22:59:08.602"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${village}</arg>
+<arg>Cengkareng Barat</arg>
+</arguments>
+<msg timestamp="20210217 22:59:08.604" level="INFO">Selecting options from selection list 'id=area' by label Cengkareng Barat.</msg>
+<status status="PASS" starttime="20210217 22:59:08.603" endtime="20210217 22:59:08.689"></status>
+</kw>
+<kw name="Textfield Value Should Be" library="Selenium2Library">
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<arguments>
+<arg>${postal code}</arg>
+<arg>11730</arg>
+</arguments>
+<msg timestamp="20210217 22:59:08.729" level="INFO">Content of text field 'id=zipcode' is '11730'.</msg>
+<status status="PASS" starttime="20210217 22:59:08.689" endtime="20210217 22:59:08.730"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button daftar}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:08.730" level="INFO">Clicking button 'id=btn-daftar'.</msg>
+<status status="PASS" starttime="20210217 22:59:08.730" endtime="20210217 22:59:08.870"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:10.880" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:08.870" endtime="20210217 22:59:10.882"></status>
+</kw>
+<status status="PASS" starttime="20210217 22:59:01.734" endtime="20210217 22:59:10.883"></status>
+</kw>
+<kw name="And Registration using empty confirmation password" library="Resource_Registration">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first name}</arg>
+<arg>Tubang</arg>
+</arguments>
+<msg timestamp="20210217 22:59:10.887" level="INFO">Typing text 'Tubang' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20210217 22:59:10.885" endtime="20210217 22:59:11.145"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last name}</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20210217 22:59:11.145" level="INFO">Typing text 'test' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20210217 22:59:11.145" endtime="20210217 22:59:11.385"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email}</arg>
+<arg>${email data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:11.387" level="INFO">Typing text 'test1008@test.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210217 22:59:11.386" endtime="20210217 22:59:11.666"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${nomor handphone}</arg>
+<arg>${nomor handphone data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:11.668" level="INFO">Typing text '08121002318' into text field 'id=handphone'.</msg>
+<status status="PASS" starttime="20210217 22:59:11.666" endtime="20210217 22:59:11.922"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:11.922" level="INFO">Typing text 'Test12345' into text field 'id=passreg'.</msg>
+<status status="PASS" starttime="20210217 22:59:11.922" endtime="20210217 22:59:12.081"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${confirm password}</arg>
+</arguments>
+<status status="PASS" starttime="20210217 22:59:12.082" endtime="20210217 22:59:12.147"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${address}</arg>
+<arg>Kebon Kacang 87</arg>
+</arguments>
+<msg timestamp="20210217 22:59:12.148" level="INFO">Typing text 'Kebon Kacang 87' into text field 'id=address'.</msg>
+<status status="PASS" starttime="20210217 22:59:12.147" endtime="20210217 22:59:12.290"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:14.306" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:12.291" endtime="20210217 22:59:14.306"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${city}</arg>
+<arg>Jakarta Barat, DKI Jakarta</arg>
+</arguments>
+<msg timestamp="20210217 22:59:14.306" level="INFO">Selecting options from selection list 'id=city' by label Jakarta Barat, DKI Jakarta.</msg>
+<status status="PASS" starttime="20210217 22:59:14.306" endtime="20210217 22:59:14.394"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:16.395" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:14.394" endtime="20210217 22:59:16.396"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${district}</arg>
+<arg>Cengkareng</arg>
+</arguments>
+<msg timestamp="20210217 22:59:16.397" level="INFO">Selecting options from selection list 'id=suburb' by label Cengkareng.</msg>
+<status status="PASS" starttime="20210217 22:59:16.396" endtime="20210217 22:59:16.483"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:18.499" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:16.483" endtime="20210217 22:59:18.499"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${village}</arg>
+<arg>Cengkareng Barat</arg>
+</arguments>
+<msg timestamp="20210217 22:59:18.500" level="INFO">Selecting options from selection list 'id=area' by label Cengkareng Barat.</msg>
+<status status="PASS" starttime="20210217 22:59:18.500" endtime="20210217 22:59:18.582"></status>
+</kw>
+<kw name="Textfield Value Should Be" library="Selenium2Library">
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<arguments>
+<arg>${postal code}</arg>
+<arg>11730</arg>
+</arguments>
+<msg timestamp="20210217 22:59:18.635" level="INFO">Content of text field 'id=zipcode' is '11730'.</msg>
+<status status="PASS" starttime="20210217 22:59:18.583" endtime="20210217 22:59:18.636"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button daftar}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:18.637" level="INFO">Clicking button 'id=btn-daftar'.</msg>
+<status status="PASS" starttime="20210217 22:59:18.636" endtime="20210217 22:59:18.797"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:20.812" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:18.798" endtime="20210217 22:59:20.812"></status>
+</kw>
+<status status="PASS" starttime="20210217 22:59:10.885" endtime="20210217 22:59:20.813"></status>
+</kw>
+<kw name="And Registration using empty address" library="Resource_Registration">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first name}</arg>
+<arg>Tubang</arg>
+</arguments>
+<msg timestamp="20210217 22:59:20.818" level="INFO">Typing text 'Tubang' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20210217 22:59:20.817" endtime="20210217 22:59:21.075"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last name}</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20210217 22:59:21.077" level="INFO">Typing text 'test' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20210217 22:59:21.076" endtime="20210217 22:59:21.316"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email}</arg>
+<arg>${email data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:21.318" level="INFO">Typing text 'test1008@test.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210217 22:59:21.317" endtime="20210217 22:59:21.590"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${nomor handphone}</arg>
+<arg>${nomor handphone data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:21.592" level="INFO">Typing text '08121002318' into text field 'id=handphone'.</msg>
+<status status="PASS" starttime="20210217 22:59:21.591" endtime="20210217 22:59:21.727"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:21.729" level="INFO">Typing text 'Test12345' into text field 'id=passreg'.</msg>
+<status status="PASS" starttime="20210217 22:59:21.727" endtime="20210217 22:59:21.856"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirm password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:21.856" level="INFO">Typing text 'Test12345' into text field 'id=conpassreg'.</msg>
+<status status="PASS" starttime="20210217 22:59:21.856" endtime="20210217 22:59:21.972"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${address}</arg>
+</arguments>
+<status status="PASS" starttime="20210217 22:59:21.973" endtime="20210217 22:59:22.018"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:24.027" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:22.018" endtime="20210217 22:59:24.027"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${city}</arg>
+<arg>Jakarta Barat, DKI Jakarta</arg>
+</arguments>
+<msg timestamp="20210217 22:59:24.027" level="INFO">Selecting options from selection list 'id=city' by label Jakarta Barat, DKI Jakarta.</msg>
+<status status="PASS" starttime="20210217 22:59:24.027" endtime="20210217 22:59:24.114"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:26.114" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:24.114" endtime="20210217 22:59:26.115"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${district}</arg>
+<arg>Cengkareng</arg>
+</arguments>
+<msg timestamp="20210217 22:59:26.116" level="INFO">Selecting options from selection list 'id=suburb' by label Cengkareng.</msg>
+<status status="PASS" starttime="20210217 22:59:26.115" endtime="20210217 22:59:26.199"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:28.208" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:26.199" endtime="20210217 22:59:28.208"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${village}</arg>
+<arg>Cengkareng Barat</arg>
+</arguments>
+<msg timestamp="20210217 22:59:28.208" level="INFO">Selecting options from selection list 'id=area' by label Cengkareng Barat.</msg>
+<status status="PASS" starttime="20210217 22:59:28.208" endtime="20210217 22:59:28.296"></status>
+</kw>
+<kw name="Textfield Value Should Be" library="Selenium2Library">
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<arguments>
+<arg>${postal code}</arg>
+<arg>11730</arg>
+</arguments>
+<msg timestamp="20210217 22:59:28.348" level="INFO">Content of text field 'id=zipcode' is '11730'.</msg>
+<status status="PASS" starttime="20210217 22:59:28.296" endtime="20210217 22:59:28.349"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button daftar}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:28.350" level="INFO">Clicking button 'id=btn-daftar'.</msg>
+<status status="PASS" starttime="20210217 22:59:28.349" endtime="20210217 22:59:28.493"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:30.502" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:28.493" endtime="20210217 22:59:30.503"></status>
+</kw>
+<status status="PASS" starttime="20210217 22:59:20.816" endtime="20210217 22:59:30.503"></status>
+</kw>
+<kw name="And Registration using empty city" library="Resource_Registration">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first name}</arg>
+<arg>Tubang</arg>
+</arguments>
+<msg timestamp="20210217 22:59:30.505" level="INFO">Typing text 'Tubang' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20210217 22:59:30.505" endtime="20210217 22:59:30.760"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last name}</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20210217 22:59:30.761" level="INFO">Typing text 'test' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20210217 22:59:30.760" endtime="20210217 22:59:30.981"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email}</arg>
+<arg>${email data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:30.983" level="INFO">Typing text 'test1008@test.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210217 22:59:30.982" endtime="20210217 22:59:31.256"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${nomor handphone}</arg>
+<arg>${nomor handphone data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:31.257" level="INFO">Typing text '08121002318' into text field 'id=handphone'.</msg>
+<status status="PASS" starttime="20210217 22:59:31.256" endtime="20210217 22:59:31.509"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:31.509" level="INFO">Typing text 'Test12345' into text field 'id=passreg'.</msg>
+<status status="PASS" starttime="20210217 22:59:31.509" endtime="20210217 22:59:31.724"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirm password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:31.724" level="INFO">Typing text 'Test12345' into text field 'id=conpassreg'.</msg>
+<status status="PASS" starttime="20210217 22:59:31.724" endtime="20210217 22:59:31.846"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${address}</arg>
+<arg>Kebon Kacang 87</arg>
+</arguments>
+<msg timestamp="20210217 22:59:31.847" level="INFO">Typing text 'Kebon Kacang 87' into text field 'id=address'.</msg>
+<status status="PASS" starttime="20210217 22:59:31.847" endtime="20210217 22:59:31.965"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:33.968" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:31.966" endtime="20210217 22:59:33.969"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${city}</arg>
+<arg>Pilih Kota</arg>
+</arguments>
+<msg timestamp="20210217 22:59:33.970" level="INFO">Selecting options from selection list 'id=city' by label Pilih Kota.</msg>
+<status status="PASS" starttime="20210217 22:59:33.969" endtime="20210217 22:59:34.148"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${postal code}</arg>
+</arguments>
+<status status="PASS" starttime="20210217 22:59:34.148" endtime="20210217 22:59:34.187"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button daftar}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:34.188" level="INFO">Clicking button 'id=btn-daftar'.</msg>
+<status status="PASS" starttime="20210217 22:59:34.188" endtime="20210217 22:59:34.285"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:36.292" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:34.285" endtime="20210217 22:59:36.293"></status>
+</kw>
+<status status="PASS" starttime="20210217 22:59:30.505" endtime="20210217 22:59:36.293"></status>
+</kw>
+<kw name="And Registration using empty district" library="Resource_Registration">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first name}</arg>
+<arg>Tubang</arg>
+</arguments>
+<msg timestamp="20210217 22:59:36.300" level="INFO">Typing text 'Tubang' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20210217 22:59:36.298" endtime="20210217 22:59:36.556"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last name}</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20210217 22:59:36.558" level="INFO">Typing text 'test' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20210217 22:59:36.558" endtime="20210217 22:59:36.778"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email}</arg>
+<arg>${email data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:36.780" level="INFO">Typing text 'test1008@test.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210217 22:59:36.779" endtime="20210217 22:59:36.979"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${nomor handphone}</arg>
+<arg>${nomor handphone data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:36.980" level="INFO">Typing text '08121002318' into text field 'id=handphone'.</msg>
+<status status="PASS" starttime="20210217 22:59:36.979" endtime="20210217 22:59:37.141"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:37.142" level="INFO">Typing text 'Test12345' into text field 'id=passreg'.</msg>
+<status status="PASS" starttime="20210217 22:59:37.142" endtime="20210217 22:59:37.318"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirm password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:37.319" level="INFO">Typing text 'Test12345' into text field 'id=conpassreg'.</msg>
+<status status="PASS" starttime="20210217 22:59:37.319" endtime="20210217 22:59:37.471"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${address}</arg>
+<arg>Kebon Kacang 87</arg>
+</arguments>
+<msg timestamp="20210217 22:59:37.472" level="INFO">Typing text 'Kebon Kacang 87' into text field 'id=address'.</msg>
+<status status="PASS" starttime="20210217 22:59:37.471" endtime="20210217 22:59:37.624"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:39.632" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:37.624" endtime="20210217 22:59:39.632"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${city}</arg>
+<arg>Jakarta Barat, DKI Jakarta</arg>
+</arguments>
+<msg timestamp="20210217 22:59:39.632" level="INFO">Selecting options from selection list 'id=city' by label Jakarta Barat, DKI Jakarta.</msg>
+<status status="PASS" starttime="20210217 22:59:39.632" endtime="20210217 22:59:39.792"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button daftar}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:39.792" level="INFO">Clicking button 'id=btn-daftar'.</msg>
+<status status="PASS" starttime="20210217 22:59:39.792" endtime="20210217 22:59:39.911"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:41.920" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:39.911" endtime="20210217 22:59:41.920"></status>
+</kw>
+<status status="PASS" starttime="20210217 22:59:36.296" endtime="20210217 22:59:41.920"></status>
+</kw>
+<kw name="And Registration using empty village" library="Resource_Registration">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first name}</arg>
+<arg>Tubang</arg>
+</arguments>
+<msg timestamp="20210217 22:59:41.923" level="INFO">Typing text 'Tubang' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20210217 22:59:41.923" endtime="20210217 22:59:42.184"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last name}</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20210217 22:59:42.184" level="INFO">Typing text 'test' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20210217 22:59:42.184" endtime="20210217 22:59:42.408"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email}</arg>
+<arg>${email data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:42.408" level="INFO">Typing text 'test1008@test.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210217 22:59:42.408" endtime="20210217 22:59:42.678"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${nomor handphone}</arg>
+<arg>${nomor handphone data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:42.679" level="INFO">Typing text '08121002318' into text field 'id=handphone'.</msg>
+<status status="PASS" starttime="20210217 22:59:42.678" endtime="20210217 22:59:42.929"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:42.930" level="INFO">Typing text 'Test12345' into text field 'id=passreg'.</msg>
+<status status="PASS" starttime="20210217 22:59:42.929" endtime="20210217 22:59:43.171"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirm password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:43.172" level="INFO">Typing text 'Test12345' into text field 'id=conpassreg'.</msg>
+<status status="PASS" starttime="20210217 22:59:43.171" endtime="20210217 22:59:43.416"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${address}</arg>
+<arg>Kebon Kacang 87</arg>
+</arguments>
+<msg timestamp="20210217 22:59:43.418" level="INFO">Typing text 'Kebon Kacang 87' into text field 'id=address'.</msg>
+<status status="PASS" starttime="20210217 22:59:43.417" endtime="20210217 22:59:43.648"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:45.664" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:43.648" endtime="20210217 22:59:45.664"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${city}</arg>
+<arg>Jakarta Barat, DKI Jakarta</arg>
+</arguments>
+<msg timestamp="20210217 22:59:45.664" level="INFO">Selecting options from selection list 'id=city' by label Jakarta Barat, DKI Jakarta.</msg>
+<status status="PASS" starttime="20210217 22:59:45.664" endtime="20210217 22:59:45.752"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:47.762" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:45.752" endtime="20210217 22:59:47.762"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${district}</arg>
+<arg>Cengkareng</arg>
+</arguments>
+<msg timestamp="20210217 22:59:47.763" level="INFO">Selecting options from selection list 'id=suburb' by label Cengkareng.</msg>
+<status status="PASS" starttime="20210217 22:59:47.763" endtime="20210217 22:59:47.885"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button daftar}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:47.885" level="INFO">Clicking button 'id=btn-daftar'.</msg>
+<status status="PASS" starttime="20210217 22:59:47.885" endtime="20210217 22:59:47.964"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:49.972" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:47.964" endtime="20210217 22:59:49.972"></status>
+</kw>
+<status status="PASS" starttime="20210217 22:59:41.923" endtime="20210217 22:59:49.973"></status>
+</kw>
+<kw name="And Registration using empty postal code" library="Resource_Registration">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first name}</arg>
+<arg>Tubang</arg>
+</arguments>
+<msg timestamp="20210217 22:59:49.978" level="INFO">Typing text 'Tubang' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20210217 22:59:49.977" endtime="20210217 22:59:50.130"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last name}</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20210217 22:59:50.130" level="INFO">Typing text 'test' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20210217 22:59:50.130" endtime="20210217 22:59:50.222"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email}</arg>
+<arg>${email data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:50.222" level="INFO">Typing text 'test1008@test.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210217 22:59:50.222" endtime="20210217 22:59:50.294"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${nomor handphone}</arg>
+<arg>${nomor handphone data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:50.295" level="INFO">Typing text '08121002318' into text field 'id=handphone'.</msg>
+<status status="PASS" starttime="20210217 22:59:50.294" endtime="20210217 22:59:50.386"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:50.386" level="INFO">Typing text 'Test12345' into text field 'id=passreg'.</msg>
+<status status="PASS" starttime="20210217 22:59:50.386" endtime="20210217 22:59:50.454"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirm password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:50.454" level="INFO">Typing text 'Test12345' into text field 'id=conpassreg'.</msg>
+<status status="PASS" starttime="20210217 22:59:50.454" endtime="20210217 22:59:50.560"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${address}</arg>
+<arg>Kebon Kacang 87</arg>
+</arguments>
+<msg timestamp="20210217 22:59:50.561" level="INFO">Typing text 'Kebon Kacang 87' into text field 'id=address'.</msg>
+<status status="PASS" starttime="20210217 22:59:50.561" endtime="20210217 22:59:50.641"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:52.648" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:50.641" endtime="20210217 22:59:52.648"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${city}</arg>
+<arg>Jakarta Barat, DKI Jakarta</arg>
+</arguments>
+<msg timestamp="20210217 22:59:52.649" level="INFO">Selecting options from selection list 'id=city' by label Jakarta Barat, DKI Jakarta.</msg>
+<status status="PASS" starttime="20210217 22:59:52.649" endtime="20210217 22:59:52.737"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:54.752" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:52.737" endtime="20210217 22:59:54.752"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${district}</arg>
+<arg>Cengkareng</arg>
+</arguments>
+<msg timestamp="20210217 22:59:54.752" level="INFO">Selecting options from selection list 'id=suburb' by label Cengkareng.</msg>
+<status status="PASS" starttime="20210217 22:59:54.752" endtime="20210217 22:59:54.830"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:56.839" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:54.830" endtime="20210217 22:59:56.839"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${village}</arg>
+<arg>Cengkareng Barat</arg>
+</arguments>
+<msg timestamp="20210217 22:59:56.839" level="INFO">Selecting options from selection list 'id=area' by label Cengkareng Barat.</msg>
+<status status="PASS" starttime="20210217 22:59:56.839" endtime="20210217 22:59:56.983"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${postal code}</arg>
+</arguments>
+<status status="PASS" starttime="20210217 22:59:56.984" endtime="20210217 22:59:57.021"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button daftar}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:57.022" level="INFO">Clicking button 'id=btn-daftar'.</msg>
+<status status="PASS" starttime="20210217 22:59:57.021" endtime="20210217 22:59:57.120"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:59.126" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 22:59:57.120" endtime="20210217 22:59:59.126"></status>
+</kw>
+<status status="PASS" starttime="20210217 22:59:49.975" endtime="20210217 22:59:59.127"></status>
+</kw>
+<kw name="And Registration using valid data" library="Resource_Registration">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first name}</arg>
+<arg>Tubang</arg>
+</arguments>
+<msg timestamp="20210217 22:59:59.130" level="INFO">Typing text 'Tubang' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20210217 22:59:59.130" endtime="20210217 22:59:59.386"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last name}</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20210217 22:59:59.387" level="INFO">Typing text 'test' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20210217 22:59:59.386" endtime="20210217 22:59:59.618"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email}</arg>
+<arg>${email data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:59.619" level="INFO">Typing text 'test1008@test.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210217 22:59:59.618" endtime="20210217 22:59:59.876"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${nomor handphone}</arg>
+<arg>${nomor handphone data}</arg>
+</arguments>
+<msg timestamp="20210217 22:59:59.877" level="INFO">Typing text '08121002318' into text field 'id=handphone'.</msg>
+<status status="PASS" starttime="20210217 22:59:59.876" endtime="20210217 23:00:00.133"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:00.134" level="INFO">Typing text 'Test12345' into text field 'id=passreg'.</msg>
+<status status="PASS" starttime="20210217 23:00:00.133" endtime="20210217 23:00:00.385"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirm password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:00.387" level="INFO">Typing text 'Test12345' into text field 'id=conpassreg'.</msg>
+<status status="PASS" starttime="20210217 23:00:00.386" endtime="20210217 23:00:00.626"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${address}</arg>
+<arg>Kebon Kacang 87</arg>
+</arguments>
+<msg timestamp="20210217 23:00:00.628" level="INFO">Typing text 'Kebon Kacang 87' into text field 'id=address'.</msg>
+<status status="PASS" starttime="20210217 23:00:00.626" endtime="20210217 23:00:00.857"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:02.866" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:00.858" endtime="20210217 23:00:02.866"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${city}</arg>
+<arg>Jakarta Barat, DKI Jakarta</arg>
+</arguments>
+<msg timestamp="20210217 23:00:02.866" level="INFO">Selecting options from selection list 'id=city' by label Jakarta Barat, DKI Jakarta.</msg>
+<status status="PASS" starttime="20210217 23:00:02.866" endtime="20210217 23:00:02.951"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:04.956" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:02.952" endtime="20210217 23:00:04.956"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${district}</arg>
+<arg>Cengkareng</arg>
+</arguments>
+<msg timestamp="20210217 23:00:04.956" level="INFO">Selecting options from selection list 'id=suburb' by label Cengkareng.</msg>
+<status status="PASS" starttime="20210217 23:00:04.956" endtime="20210217 23:00:04.987"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:07.000" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:04.987" endtime="20210217 23:00:07.000"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${village}</arg>
+<arg>Cengkareng Barat</arg>
+</arguments>
+<msg timestamp="20210217 23:00:07.000" level="INFO">Selecting options from selection list 'id=area' by label Cengkareng Barat.</msg>
+<status status="PASS" starttime="20210217 23:00:07.000" endtime="20210217 23:00:07.062"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${postal code}</arg>
+<arg>11730</arg>
+</arguments>
+<msg timestamp="20210217 23:00:07.062" level="INFO">Typing text '11730' into text field 'id=zipcode'.</msg>
+<status status="PASS" starttime="20210217 23:00:07.062" endtime="20210217 23:00:07.183"></status>
+</kw>
+<kw name="Textfield Value Should Be" library="Selenium2Library">
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<arguments>
+<arg>${postal code}</arg>
+<arg>11730</arg>
+</arguments>
+<msg timestamp="20210217 23:00:07.218" level="INFO">Content of text field 'id=zipcode' is '11730'.</msg>
+<status status="PASS" starttime="20210217 23:00:07.183" endtime="20210217 23:00:07.218"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button daftar}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:07.219" level="INFO">Clicking button 'id=btn-daftar'.</msg>
+<status status="PASS" starttime="20210217 23:00:07.218" endtime="20210217 23:00:10.566"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:12.578" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:10.566" endtime="20210217 23:00:12.578"></status>
+</kw>
+<kw name="Success Registration" library="Resource_Registration">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>class=notification--success</arg>
+</arguments>
+<msg timestamp="20210217 23:00:12.642" level="INFO">Element 'class=notification--success' is displayed.</msg>
+<status status="PASS" starttime="20210217 23:00:12.578" endtime="20210217 23:00:12.642"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:12.578" endtime="20210217 23:00:12.642"></status>
+</kw>
+<status status="PASS" starttime="20210217 22:59:59.130" endtime="20210217 23:00:12.643"></status>
+</kw>
+<kw name="And Registration using exist email and phone number" library="Resource_Registration">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${menu daftar}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:12.645" level="INFO">Clicking element 'id=btn-tabdaftar'.</msg>
+<status status="PASS" starttime="20210217 23:00:12.644" endtime="20210217 23:00:12.708"></status>
+</kw>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0, 300)</arg>
+</arguments>
+<msg timestamp="20210217 23:00:12.708" level="INFO">Executing JavaScript:
+window.scrollTo(0, 300)
+Without any arguments.</msg>
+<status status="PASS" starttime="20210217 23:00:12.708" endtime="20210217 23:00:12.713"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${first name}</arg>
+<arg>Tubang</arg>
+</arguments>
+<msg timestamp="20210217 23:00:12.714" level="INFO">Typing text 'Tubang' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20210217 23:00:12.714" endtime="20210217 23:00:12.832"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${last name}</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20210217 23:00:12.833" level="INFO">Typing text 'test' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20210217 23:00:12.833" endtime="20210217 23:00:12.975"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email}</arg>
+<arg>test02@test.com</arg>
+</arguments>
+<msg timestamp="20210217 23:00:12.976" level="INFO">Typing text 'test02@test.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210217 23:00:12.975" endtime="20210217 23:00:13.092"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${nomor handphone}</arg>
+<arg>08123212313</arg>
+</arguments>
+<msg timestamp="20210217 23:00:13.093" level="INFO">Typing text '08123212313' into text field 'id=handphone'.</msg>
+<status status="PASS" starttime="20210217 23:00:13.093" endtime="20210217 23:00:13.206"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:13.207" level="INFO">Typing text 'Test12345' into text field 'id=passreg'.</msg>
+<status status="PASS" starttime="20210217 23:00:13.207" endtime="20210217 23:00:13.287"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirm password}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:13.288" level="INFO">Typing text 'Test12345' into text field 'id=conpassreg'.</msg>
+<status status="PASS" starttime="20210217 23:00:13.288" endtime="20210217 23:00:13.395"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${address}</arg>
+<arg>Kebon Kacang 87</arg>
+</arguments>
+<msg timestamp="20210217 23:00:13.395" level="INFO">Typing text 'Kebon Kacang 87' into text field 'id=address'.</msg>
+<status status="PASS" starttime="20210217 23:00:13.395" endtime="20210217 23:00:13.538"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:15.543" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:13.538" endtime="20210217 23:00:15.543"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${city}</arg>
+<arg>Jakarta Barat, DKI Jakarta</arg>
+</arguments>
+<msg timestamp="20210217 23:00:15.544" level="INFO">Selecting options from selection list 'id=city' by label Jakarta Barat, DKI Jakarta.</msg>
+<status status="PASS" starttime="20210217 23:00:15.543" endtime="20210217 23:00:15.713"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:17.722" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:15.713" endtime="20210217 23:00:17.723"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${district}</arg>
+<arg>Cengkareng</arg>
+</arguments>
+<msg timestamp="20210217 23:00:17.724" level="INFO">Selecting options from selection list 'id=suburb' by label Cengkareng.</msg>
+<status status="PASS" starttime="20210217 23:00:17.724" endtime="20210217 23:00:17.894"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:19.898" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:17.894" endtime="20210217 23:00:19.898"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${village}</arg>
+<arg>Cengkareng Barat</arg>
+</arguments>
+<msg timestamp="20210217 23:00:19.898" level="INFO">Selecting options from selection list 'id=area' by label Cengkareng Barat.</msg>
+<status status="PASS" starttime="20210217 23:00:19.898" endtime="20210217 23:00:20.048"></status>
+</kw>
+<kw name="Textfield Value Should Be" library="Selenium2Library">
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<arguments>
+<arg>${postal code}</arg>
+<arg>11730</arg>
+</arguments>
+<msg timestamp="20210217 23:00:20.079" level="INFO">Content of text field 'id=zipcode' is '11730'.</msg>
+<status status="PASS" starttime="20210217 23:00:20.048" endtime="20210217 23:00:20.079"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button daftar}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:20.079" level="INFO">Clicking button 'id=btn-daftar'.</msg>
+<status status="PASS" starttime="20210217 23:00:20.079" endtime="20210217 23:00:21.543"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:23.551" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:21.543" endtime="20210217 23:00:23.551"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:12.644" endtime="20210217 23:00:23.552"></status>
+</kw>
+<kw name="Then Error Registration cause exist email or phone number" library="Resource_Registration">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>class=notification--error</arg>
+</arguments>
+<msg timestamp="20210217 23:00:23.627" level="INFO">Element 'class=notification--error' is displayed.</msg>
+<status status="PASS" starttime="20210217 23:00:23.556" endtime="20210217 23:00:23.627"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:23.554" endtime="20210217 23:00:23.628"></status>
+</kw>
+<status status="PASS" starttime="20210217 22:58:03.514" endtime="20210217 23:00:23.629" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Forgot Password Shipper">
+<kw name="When User try Forgot Password" library="Resource_Forgot_Password">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${link forgot password}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:23.637" level="INFO">Clicking element 'id=link-forgotpass'.</msg>
+<status status="PASS" starttime="20210217 23:00:23.636" endtime="20210217 23:00:23.780"></status>
+</kw>
+<kw name="Get Window Handles" library="Selenium2Library">
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<assign>
+<var>@{WindowTitle}</var>
+</assign>
+<msg timestamp="20210217 23:00:23.784" level="INFO">@{WindowTitle} = [ CDwindow-0E1B253AB00C7709F9A83CA5BEBBEC67 | CDwindow-3128CF51E00EBBD4DC1578214A02ED49 ]</msg>
+<status status="PASS" starttime="20210217 23:00:23.780" endtime="20210217 23:00:23.784"></status>
+</kw>
+<kw name="Switch Window" library="Selenium2Library">
+<doc>Switches to browser window matching ``locator``.</doc>
+<arguments>
+<arg>${WindowTitle}[1]</arg>
+</arguments>
+<status status="PASS" starttime="20210217 23:00:23.784" endtime="20210217 23:00:23.846"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>BOS PORTAL | Shipper.id</arg>
+</arguments>
+<msg timestamp="20210217 23:00:26.211" level="INFO">Page title is 'BOS PORTAL | Shipper.id'.</msg>
+<status status="PASS" starttime="20210217 23:00:23.846" endtime="20210217 23:00:26.211"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:23.636" endtime="20210217 23:00:26.211"></status>
+</kw>
+<kw name="And Checking elements in page Forgot Password" library="Resource_Forgot_Password">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${email or phone number}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:26.256" level="INFO">Element 'name=identity' is displayed.</msg>
+<status status="PASS" starttime="20210217 23:00:26.216" endtime="20210217 23:00:26.256"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${button reset password before error}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:26.293" level="INFO">Element 'xpath=/html/body/div[2]/div/form/div[2]/div/button' is displayed.</msg>
+<status status="PASS" starttime="20210217 23:00:26.256" endtime="20210217 23:00:26.293"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${link login before error}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:26.317" level="INFO">Element 'xpath=/html/body/div[2]/div/form/div[3]/div/a' is displayed.</msg>
+<status status="PASS" starttime="20210217 23:00:26.293" endtime="20210217 23:00:26.317"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:26.216" endtime="20210217 23:00:26.317"></status>
+</kw>
+<kw name="And Forgot Password using empty email or phone number" library="Resource_Forgot_Password">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button reset password before error}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:26.318" level="INFO">Clicking button 'xpath=/html/body/div[2]/div/form/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20210217 23:00:26.318" endtime="20210217 23:00:26.462"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:28.471" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:26.463" endtime="20210217 23:00:28.472"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:26.318" endtime="20210217 23:00:28.473"></status>
+</kw>
+<kw name="And Forgot Password using non exist email or non exist phone number" library="Resource_Forgot_Password">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email or phone number}</arg>
+<arg>uadhuahf@udhuds.com</arg>
+</arguments>
+<msg timestamp="20210217 23:00:28.480" level="INFO">Typing text 'uadhuahf@udhuds.com' into text field 'name=identity'.</msg>
+<status status="PASS" starttime="20210217 23:00:28.479" endtime="20210217 23:00:28.808"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button reset password before error}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:28.810" level="INFO">Clicking button 'xpath=/html/body/div[2]/div/form/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20210217 23:00:28.809" endtime="20210217 23:00:31.105"></status>
+</kw>
+<kw name="Success or Error Forgot Password Warning" library="Resource_Forgot_Password">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=/html/body/div[1]</arg>
+</arguments>
+<msg timestamp="20210217 23:00:31.132" level="INFO">Element 'xpath=/html/body/div[1]' is displayed.</msg>
+<status status="PASS" starttime="20210217 23:00:31.106" endtime="20210217 23:00:31.132"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:31.105" endtime="20210217 23:00:31.132"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:33.143" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:31.132" endtime="20210217 23:00:33.143"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:28.476" endtime="20210217 23:00:33.143"></status>
+</kw>
+<kw name="And Forgot Password using valid data" library="Resource_Forgot_Password">
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${email or phone number}</arg>
+</arguments>
+<status status="PASS" starttime="20210217 23:00:33.145" endtime="20210217 23:00:33.216"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email or phone number}</arg>
+<arg>${email exist}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:33.217" level="INFO">Typing text 'test02@test.com' into text field 'name=identity'.</msg>
+<status status="PASS" starttime="20210217 23:00:33.216" endtime="20210217 23:00:33.341"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button reset password after error}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:33.342" level="INFO">Clicking button 'xpath=/html/body/div[3]/div/form/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20210217 23:00:33.342" endtime="20210217 23:00:35.355"></status>
+</kw>
+<kw name="Success or Error Forgot Password Warning" library="Resource_Forgot_Password">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=/html/body/div[1]</arg>
+</arguments>
+<msg timestamp="20210217 23:00:35.409" level="INFO">Element 'xpath=/html/body/div[1]' is displayed.</msg>
+<status status="PASS" starttime="20210217 23:00:35.356" endtime="20210217 23:00:35.410"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:35.355" endtime="20210217 23:00:35.410"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:37.413" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:35.410" endtime="20210217 23:00:37.413"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:33.145" endtime="20210217 23:00:37.413"></status>
+</kw>
+<kw name="Then page Login should be display" library="Resource_Forgot_Password">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>BOS PORTAL | Shipper.id</arg>
+</arguments>
+<msg timestamp="20210217 23:00:37.425" level="INFO">Page title is 'BOS PORTAL | Shipper.id'.</msg>
+<status status="PASS" starttime="20210217 23:00:37.415" endtime="20210217 23:00:37.425"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:37.415" endtime="20210217 23:00:37.425"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:23.633" endtime="20210217 23:00:37.426" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Login Shipper">
+<kw name="When user try Login" library="Resource_Login">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${link login after error}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:37.428" level="INFO">Clicking link 'xpath=/html/body/div[3]/div/form/div[3]/div/a'.</msg>
+<status status="PASS" starttime="20210217 23:00:37.426" endtime="20210217 23:00:38.936"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:40.941" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:38.937" endtime="20210217 23:00:40.941"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>BOS PORTAL | Shipper.id</arg>
+</arguments>
+<msg timestamp="20210217 23:00:40.974" level="INFO">Page title is 'BOS PORTAL | Shipper.id'.</msg>
+<status status="PASS" starttime="20210217 23:00:40.941" endtime="20210217 23:00:40.974"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:37.426" endtime="20210217 23:00:40.975"></status>
+</kw>
+<kw name="And Checking elements in page Login" library="Resource_Login">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${email or hp}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:41.029" level="INFO">Element 'id=emailHp' is displayed.</msg>
+<status status="PASS" starttime="20210217 23:00:40.977" endtime="20210217 23:00:41.029"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${passwordLogin}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:41.073" level="INFO">Element 'id=pwd' is displayed.</msg>
+<status status="PASS" starttime="20210217 23:00:41.029" endtime="20210217 23:00:41.073"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${link forgot password}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:41.116" level="INFO">Element 'id=link-forgotpass' is displayed.</msg>
+<status status="PASS" starttime="20210217 23:00:41.073" endtime="20210217 23:00:41.116"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${button login}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:41.160" level="INFO">Element 'id=btn-masuk' is displayed.</msg>
+<status status="PASS" starttime="20210217 23:00:41.116" endtime="20210217 23:00:41.160"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:40.977" endtime="20210217 23:00:41.160"></status>
+</kw>
+<kw name="And Login using empty email and empty password" library="Resource_Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button login}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:41.162" level="INFO">Clicking button 'id=btn-masuk'.</msg>
+<status status="PASS" starttime="20210217 23:00:41.162" endtime="20210217 23:00:41.329"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:43.332" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:41.329" endtime="20210217 23:00:43.332"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:41.162" endtime="20210217 23:00:43.332"></status>
+</kw>
+<kw name="And Login using empty email and valid password" library="Resource_Login">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordLogin}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:43.334" level="INFO">Typing text 'Test12345' into text field 'id=pwd'.</msg>
+<status status="PASS" starttime="20210217 23:00:43.334" endtime="20210217 23:00:43.464"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button login}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:43.464" level="INFO">Clicking button 'id=btn-masuk'.</msg>
+<status status="PASS" starttime="20210217 23:00:43.464" endtime="20210217 23:00:43.540"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:45.549" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:43.540" endtime="20210217 23:00:45.549"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:43.334" endtime="20210217 23:00:45.549"></status>
+</kw>
+<kw name="And Login using valid email and empty password" library="Resource_Login">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email or hp}</arg>
+<arg>${email data}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:45.557" level="INFO">Typing text 'test1008@test.com' into text field 'id=emailHp'.</msg>
+<status status="PASS" starttime="20210217 23:00:45.555" endtime="20210217 23:00:45.712"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordLogin}</arg>
+</arguments>
+<status status="PASS" starttime="20210217 23:00:45.712" endtime="20210217 23:00:45.749"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button login}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:45.749" level="INFO">Clicking button 'id=btn-masuk'.</msg>
+<status status="PASS" starttime="20210217 23:00:45.749" endtime="20210217 23:00:45.835"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:47.850" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:45.836" endtime="20210217 23:00:47.851"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:45.553" endtime="20210217 23:00:47.851"></status>
+</kw>
+<kw name="And Login using non exist email and valid password" library="Resource_Login">
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${email or hp}</arg>
+</arguments>
+<status status="PASS" starttime="20210217 23:00:47.856" endtime="20210217 23:00:47.959"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email or hp}</arg>
+<arg>test05672@test.com</arg>
+</arguments>
+<msg timestamp="20210217 23:00:47.960" level="INFO">Typing text 'test05672@test.com' into text field 'id=emailHp'.</msg>
+<status status="PASS" starttime="20210217 23:00:47.960" endtime="20210217 23:00:48.215"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordLogin}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:48.217" level="INFO">Typing text 'Test12345' into text field 'id=pwd'.</msg>
+<status status="PASS" starttime="20210217 23:00:48.216" endtime="20210217 23:00:48.324"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button login}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:48.324" level="INFO">Clicking button 'id=btn-masuk'.</msg>
+<status status="PASS" starttime="20210217 23:00:48.324" endtime="20210217 23:00:49.936"></status>
+</kw>
+<kw name="Error Registration cause exist email or phone number" library="Resource_Registration">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>class=notification--error</arg>
+</arguments>
+<msg timestamp="20210217 23:00:50.000" level="INFO">Element 'class=notification--error' is displayed.</msg>
+<status status="PASS" starttime="20210217 23:00:49.939" endtime="20210217 23:00:50.000"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:49.937" endtime="20210217 23:00:50.000"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:52.006" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:50.000" endtime="20210217 23:00:52.006"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:47.854" endtime="20210217 23:00:52.006"></status>
+</kw>
+<kw name="And Login using invalid email and valid password" library="Resource_Login">
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${email or hp}</arg>
+</arguments>
+<status status="PASS" starttime="20210217 23:00:52.009" endtime="20210217 23:00:52.082"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email or hp}</arg>
+<arg>test05672</arg>
+</arguments>
+<msg timestamp="20210217 23:00:52.082" level="INFO">Typing text 'test05672' into text field 'id=emailHp'.</msg>
+<status status="PASS" starttime="20210217 23:00:52.082" endtime="20210217 23:00:52.150"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordLogin}</arg>
+</arguments>
+<status status="PASS" starttime="20210217 23:00:52.150" endtime="20210217 23:00:52.196"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordLogin}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:52.197" level="INFO">Typing text 'Test12345' into text field 'id=pwd'.</msg>
+<status status="PASS" starttime="20210217 23:00:52.196" endtime="20210217 23:00:52.312"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button login}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:52.312" level="INFO">Clicking button 'id=btn-masuk'.</msg>
+<status status="PASS" starttime="20210217 23:00:52.312" endtime="20210217 23:00:52.941"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:54.945" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:52.942" endtime="20210217 23:00:54.946"></status>
+</kw>
+<kw name="Error Registration cause exist email or phone number" library="Resource_Registration">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>class=notification--error</arg>
+</arguments>
+<msg timestamp="20210217 23:00:55.011" level="INFO">Element 'class=notification--error' is displayed.</msg>
+<status status="PASS" starttime="20210217 23:00:54.947" endtime="20210217 23:00:55.011"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:54.946" endtime="20210217 23:00:55.011"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:57.013" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:00:55.011" endtime="20210217 23:00:57.013"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:52.009" endtime="20210217 23:00:57.013"></status>
+</kw>
+<kw name="And Login using valid email and valid password" library="Resource_Login">
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${email or hp}</arg>
+</arguments>
+<status status="PASS" starttime="20210217 23:00:57.016" endtime="20210217 23:00:57.115"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email or phone number}</arg>
+<arg>${email data}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:57.116" level="INFO">Typing text 'test1008@test.com' into text field 'name=identity'.</msg>
+<status status="PASS" starttime="20210217 23:00:57.116" endtime="20210217 23:00:57.200"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordLogin}</arg>
+</arguments>
+<status status="PASS" starttime="20210217 23:00:57.200" endtime="20210217 23:00:57.262"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordLogin}</arg>
+<arg>${password data}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:57.262" level="INFO">Typing text 'Test12345' into text field 'id=pwd'.</msg>
+<status status="PASS" starttime="20210217 23:00:57.262" endtime="20210217 23:00:57.373"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${button login}</arg>
+</arguments>
+<msg timestamp="20210217 23:00:57.373" level="INFO">Clicking button 'id=btn-masuk'.</msg>
+<status status="PASS" starttime="20210217 23:00:57.373" endtime="20210217 23:01:14.134"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20210217 23:01:16.141" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210217 23:01:14.135" endtime="20210217 23:01:16.141"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:57.016" endtime="20210217 23:01:16.141"></status>
+</kw>
+<kw name="Then page Dashboard should be display" library="Resource_Login">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Shipper.id</arg>
+</arguments>
+<msg timestamp="20210217 23:01:16.154" level="INFO">Page title is 'Shipper.id'.</msg>
+<status status="PASS" starttime="20210217 23:01:16.142" endtime="20210217 23:01:16.154"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:01:16.142" endtime="20210217 23:01:16.154"></status>
+</kw>
+<status status="PASS" starttime="20210217 23:00:37.426" endtime="20210217 23:01:16.155" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210217 22:58:03.302" endtime="20210217 23:01:16.158"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="Authentication Shipper">Authentication Shipper</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
